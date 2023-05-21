@@ -4,10 +4,11 @@ function Book(title, author, pages, readBook) {
     this.title = title;
     this.author = author
     this.pages = pages;
-    readBook = false;
+    this.readBook = readBook;
 
 }
 
-function addBookToLibrary() {
-    
+function addBookToLibrary(bookObj) {
+    myLibrary.push(bookObj);
+
 }
