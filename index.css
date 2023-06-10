@@ -183,6 +183,7 @@ input {
     gap: 80px;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 
@@ -215,9 +216,13 @@ input {
     height: 2vh;
     min-height: 20px;
     font-family: 'Righteous', cursive;
-    
-    
-    
+}
+
+.read-button:hover {
+    background-color: rgb(78, 215, 169);
+    transition: all 0.2s ease-out;
+
+
 }
 
 .delete-button {
@@ -227,6 +232,10 @@ input {
     height: 2vh;
     min-height: 20px;
     font-family: 'Righteous', cursive;
+}
+.delete-button:hover {
+    background-color: rgb(192, 88, 88);
+    transition: all 0.2s ease-out;
 
 }
 
@@ -234,9 +243,8 @@ input {
     color: aquamarine;
     font-family: 'Righteous', cursive;
     margin: 20px;
-    position: fixed;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
+    margin-top: 200px;
+    position: relative;
     text-align: center;
+    margin-top: 20px;
 }
