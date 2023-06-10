@@ -184,7 +184,7 @@ input {
   width: 18vw;
   min-width: 200px;
   height: 15vh;
-  min-height: 180px;
+  min-height: 300px;
   border: 1px solid black;
   border-radius: 10px;
   display: flex;
