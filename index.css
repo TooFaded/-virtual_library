@@ -258,6 +258,7 @@ input {
     .bookForm_container {
       margin: 20px auto;
       width: 90%;
+      height: 20vh;
     }
   
     .book-card {
