@@ -12,6 +12,7 @@ function Book(title, author, pages, readBook) {
 
 function addBookToLibrary(book) {
   myLibrary.push(book);
+  updateBookCounter();
 
 }
 
@@ -19,8 +20,18 @@ function removeBookFromLibrary(book) {
   const index = myLibrary.indexOf(book);
   if (index !== -1) {
     myLibrary.splice(index, 1);
+    updateBookCounter();
     console.log(myLibrary);
   }
+}
+
+function updateBookCounter() {
+  const bookCounter = document.getElementById('book-counter');
+
+  if (bookCounter) {
+    bookCounter.textContent = 'Number of Books: ' + myLibrary.length; // Update the text content with the current number of books
+  }
+
 }
 
 

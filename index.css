@@ -197,11 +197,13 @@ input {
     min-width: 200px;
     height: 15vh;
     min-height: 180px;
-    border: 1px solid rgb(35, 58, 207);
+    border: 1px solid black;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    -webkit-box-shadow: 1px 1px 15px 2px rgba(0,0,0,0.51); 
+    box-shadow: 1px 1px 15px 2px rgba(0,0,0,0.51);
 
 
 }
@@ -226,4 +228,15 @@ input {
     min-height: 20px;
     font-family: 'Righteous', cursive;
 
+}
+
+#book-counter {
+    color: aquamarine;
+    font-family: 'Righteous', cursive;
+    margin: 20px;
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
 }
