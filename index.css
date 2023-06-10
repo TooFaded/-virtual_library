@@ -232,32 +232,21 @@ input {
 }
 
 
-@media screen and (max-width: 768px) {
-    .bookContainer {
-      flex-direction: column;
-      gap: 20px;
-    }
-  
-    .book-card {
-      width: 80%;
-      margin: 20px auto;
-    }
-  
+@media screen and (max-width: 600px) {
     .bookForm_container {
-      width: 80%;
-      height: 60vh;
+      width: 90%;
+      max-width: none;
     }
   
-    .addBookBtn {
-      width: 100%;
+    .bookContainer {
+      gap: 30px;
     }
   
-    .text-input {
-      width: 80%;
-      max-width: 100%;
+    .addBook_containter {
+      margin-top: 20px;
     }
-    
+  
     .header {
-      flex-shrink: 0; /* Prevent the header from shrinking */
+      min-width: auto;
     }
   }
