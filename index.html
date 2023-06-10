@@ -12,8 +12,8 @@
     <title>Virtual Library</title>
 </head>
 <body>
-    <section class="heading">
-        <div class="header">
+    <section class="header">
+        <div class="heading">
             <div class="header-title">
                 <h1 class="title">
                     Virtual_Library
@@ -22,12 +22,46 @@
         </div>
     </section>
     <section class="main">
-        <div class="add-button_containter">
-            <button class="add-button">
+        <div class="addBook_containter">
+            <button class="addBookBtn" id="addBookBtn">
                 + Add Book
             </button>
         </div>
+       
+        <div class="bookContainer" id="bookContainer"></div>
+   
     </section>
+    <div class="bookForm_container" id="bookForm_container" style="display: none;">
+        <div class="bookForm_header">
+            <h1 class="bookForm_title">
+                Add New Book
+            </h1>
+            <button id="close-button">&times;</button>
+        </div>          
+        <form class="bookForm" id="bookForm">
+            
+                <label for="title">
+                    <input class="text-input" type="text" id="title" name="title" placeholder="Title" required>
+                </label>
+           
+                <label for="author"> 
+                    <input class="text-input" type="text" id="author" name="author" placeholder="Author" required>
+               </label>
+            
+                <label for="pages">
+                    <input class="text-input" type="number" id="pages" name="pages" placeholder="Pages" required>
+                </label>
+            
+
+                <label for="read">Have you read the book?
+                    <input type="checkbox" id="read" name="read">
+               </label>
+            
+
+            <button class="addBookSubmit" type="submit">Submit</button>
+        </form>
+    </div>
+    <div class="inactive" id="overlay"></div>
 
     
 </body>
