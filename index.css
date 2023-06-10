@@ -256,6 +256,8 @@ input {
       width: 80%;
       max-width: 100%;
     }
-  
     
+    .header {
+      flex-shrink: 0; /* Prevent the header from shrinking */
+    }
   }
