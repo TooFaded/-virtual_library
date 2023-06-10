@@ -227,3 +227,32 @@ input {
   text-align: center;
   margin-top: 20px;
 }
+
+
+@media screen and (max-width: 768px) {
+    .bookContainer {
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    .book-card {
+      width: 80%;
+      margin: 20px auto;
+    }
+  
+    .bookForm_container {
+      width: 80%;
+      height: 60vh;
+    }
+  
+    .addBookBtn {
+      width: 100%;
+    }
+  
+    .text-input {
+      width: 80%;
+      max-width: 100%;
+    }
+  
+    
+  }

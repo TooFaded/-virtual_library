@@ -1,18 +1,19 @@
-const bookForm = document.getElementById("bookForm_container");
-let myLibrary = [];
+const bookForm = document.getElementById("bookForm_container");// Get the book form container element
+let myLibrary = [];// Initialize an empty array to store the library books
 
+// Constructor function for creating book objects
 function Book(title, author, pages, readBook) {
   this.title = title;
   this.author = author;
   this.pages = pages;
   this.readBook = readBook;
 }
-
+// Function to add a book to the library
 function addBookToLibrary(book) {
   myLibrary.push(book);
   updateBookCounter();
 }
-
+// Function to remove a book from the library
 function removeBookFromLibrary(book) {
   const index = myLibrary.indexOf(book);
   if (index !== -1) {
@@ -21,7 +22,7 @@ function removeBookFromLibrary(book) {
     console.log(myLibrary);
   }
 }
-
+// Function to update the book counter
 function updateBookCounter() {
   const bookCounter = document.getElementById("book-counter");
 
@@ -29,7 +30,7 @@ function updateBookCounter() {
     bookCounter.textContent = "Number of Books: " + myLibrary.length; // Update the text content with the current number of books
   }
 }
-
+// Function to render a book card and return the card element
 function renderBookCard(book) {
   const card = document.createElement("div");
   card.classList.add("book-card");
@@ -68,7 +69,7 @@ function renderBookCard(book) {
 
   return card;
 }
-
+//Handles book submissions
 const submitBookForm = document.getElementById("bookForm");
 submitBookForm.addEventListener("submit", function (event) {
   event.preventDefault();
@@ -101,7 +102,7 @@ submitBookForm.addEventListener("submit", function (event) {
   bookForm.style.display = "none";
   overlay.className = "inactive";
 });
-
+//Function that toggles form
 function toggleFormVisibility() {
   const bookForm = document.getElementById("bookForm_container");
   bookForm.style.display = bookForm.style.display === "none" ? "block" : "none";
