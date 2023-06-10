@@ -98,8 +98,6 @@ input {
     height: 3vh;
     border: solid black 1px;
     border-radius: 5px;
-    
-
 }
 
 .bookForm_container {
@@ -123,10 +121,6 @@ input {
     display: flex;
     justify-content: flex-end;
     gap: 60px;
-    
-    
-    
-
 }
 
 .bookForm_header #close-button {
@@ -195,7 +189,7 @@ input {
 .book-card {
     font-family: 'Righteous', cursive;
     color: aquamarine;
-    background-color: rgb(21, 81, 87);
+    background-color: rgb(35, 58, 207);
     text-align: center;
     margin: 50px;
     padding: 20px;
@@ -209,5 +203,27 @@ input {
     flex-direction: column;
     justify-content: space-around;
 
+
+}
+
+.read-button {
+    background-color: aquamarine;
+    border: none;
+    border-radius: 5px;
+    height: 2vh;
+    min-height: 20px;
+    font-family: 'Righteous', cursive;
+    
+    
+    
+}
+
+.delete-button {
+    background-color: rgb(231, 104, 104);
+    border: none;
+    border-radius: 5px;
+    height: 2vh;
+    min-height: 20px;
+    font-family: 'Righteous', cursive;
 
 }
