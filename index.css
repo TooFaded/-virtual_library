@@ -104,6 +104,7 @@ input {
   width: 420px;
   max-width: 80%;
   height: 40vh;
+  min-height: 480px;
   text-align: center;
   background-color: rgba(27, 105, 114);
   font-family: "Righteous", cursive;
@@ -132,6 +133,7 @@ input {
   background-color: rgb(35, 58, 207);
   color: aquamarine;
   height: 4vh;
+  min-height: 50px;
   width: 150px;
   border: solid black 1px;
   border-radius: 5px;
